@@ -1,0 +1,64 @@
+.header{
+  padding-top: 13px;
+  &__body{
+    display: flex;
+    align-items: center;
+  }
+  
+  &__logo{
+    margin-right: 52px;
+  }
+  &__details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: auto;
+  }
+  &__city{
+    font-size: 1.063em;
+    span{
+        color: #F7D22D;
+    }
+  }
+  &__plus{
+    display: flex;
+    gap: 40px;
+  }
+  &__reviews{
+    span{
+      display: inline-block;
+      position: ab;
+      border-radius: 5px;
+      width: 5px;
+      height: 5px;
+      background-color: #FF2E65;
+    }
+    &:nth-of-type(1){
+      position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2264%22%20height%3D%2264%22%3E%3Cswitch%3E%3Cg%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2232%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23fdc151%22%2F%3E%3Cpath%20d%3D%22M32%2012.6c-6.8%200-12.4%205.5-12.4%2012.2%200%202.6.8%205%202.3%207.1l.3.5%206.5%209s.8%201.3%202.5%201.3h1.5c1.7%200%202.5-1.3%202.5-1.3l6.5-9%20.3-.5c1.5-2.1%202.3-4.6%202.3-7.1.1-6.7-5.5-12.2-12.3-12.2zm5.1%2015.8l-.3.5-4.8%206.6-4.8-6.6-.3-.5c-.8-1-1.2-2.3-1.2-3.6%200-3.4%202.8-6.2%206.3-6.2s6.3%202.8%206.3%206.2c0%201.3-.4%202.5-1.2%203.6zm-8.6%2019.7c0-1.8%201.5-3.4%203.5-3.4s3.4%201.5%203.4%203.3c0%201.8-1.5%203.3-3.5%203.3-1.9.1-3.4-1.4-3.4-3.2z%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%2300a082%22%2F%3E%3C%2Fg%3E%3C%2Fswitch%3E%3C%2Fsvg%3E);
+        background-size: contain;
+        background-repeat: no-repeat;
+        right: 90px;
+        top: -6px;
+      }
+      &::after{
+        content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M13%205.05469C13%204.82031%2012.75%204.72656%2012.5625%204.69531L8.64062%204.125L6.88281%200.570312C6.8125%200.421875%206.67969%200.25%206.5%200.25C6.32031%200.25%206.1875%200.421875%206.11719%200.570312L4.35938%204.125L0.4375%204.69531C0.242188%204.72656%200%204.82031%200%205.05469C0%205.19531%200.101563%205.32812%200.195313%205.42969L3.03906%208.19531L2.36719%2012.1016C2.35938%2012.1563%202.35156%2012.2031%202.35156%2012.2578C2.35156%2012.4609%202.45313%2012.6484%202.67969%2012.6484C2.78906%2012.6484%202.89063%2012.6094%202.99219%2012.5547L6.5%2010.7109L10.0078%2012.5547C10.1016%2012.6094%2010.2109%2012.6484%2010.3203%2012.6484C10.5469%2012.6484%2010.6406%2012.4609%2010.6406%2012.2578C10.6406%2012.2031%2010.6406%2012.1563%2010.6328%2012.1016L9.96094%208.19531L12.7969%205.42969C12.8984%205.32812%2013%205.19531%2013%205.05469Z%22%20fill%3D%22%23FFC816%22%2F%3E%3C%2Fsvg%3E');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -19px;
+    top: 1px;
+      }
+    }
+  }
+}

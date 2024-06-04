@@ -21,12 +21,14 @@ html,body{
 	width: 100%;
 	font-size: 100%;
 	line-height: 1;
-	font-size: 14px;
+	font-size: 16px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	color: #231F20;
 }
 input,button,textarea {font-family:inherit;}
+
 
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
