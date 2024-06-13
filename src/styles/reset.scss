@@ -5,6 +5,7 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
+	transition: all 0.2s ease-in-out;
 }
 *,*:before,*:after{
 	-moz-box-sizing: border-box;
@@ -29,7 +30,12 @@ html,body{
 }
 input,button,textarea {font-family:inherit;}
 
+a{
 
+	&:hover{
+		color: #F7D22D;
+	  }
+}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
