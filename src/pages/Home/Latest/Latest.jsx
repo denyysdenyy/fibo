@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./latest.module.scss";
-import fiveCheese from '../../../assets/img/pizza/5cheese.png'
-import bbq from '../../../assets/img/pizza/bbq.png'
-import margarita from '../../../assets/img/pizza/margarita.png'
-import pepperoni from '../../../assets/img/pizza/pepperoni.png'
+import fiveCheese from "../../../assets/img/pizza/5cheese.png";
+import bbq from "../../../assets/img/pizza/bbq.png";
+import margarita from "../../../assets/img/pizza/margarita.png";
+import pepperoni from "../../../assets/img/pizza/pepperoni.png";
 
 const newProducts = [
   { name: "Маргарита", price: 230, img: fiveCheese, id: 1 },
@@ -20,7 +20,7 @@ const Latest = () => {
         {newProducts.map((card) => (
           <div key={card.id} className={styles.latest__card}>
             <img className={styles.latest__img} src={card.img} alt="pizza" />
-            <div className={styles.latest__card__info}>
+            <div>
               <p className={styles.latest__card__title}>{card.name}</p>
               <p className={styles.latest__card__price}>{card.price} ₴</p>
             </div>
