@@ -1,0 +1,56 @@
+.card {
+  max-width: 256px;
+  width: 100%;
+  position: relative;
+  &__new {
+    background-color: red;
+    display: inline-block;
+    border-radius: 29px;
+    padding: 4px 12px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+  &__title {
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 18px;
+    max-width: 256px;
+    width: inherit;
+    color: #797979;
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 0.8em;
+    line-height: 20px;
+    color: #686466;
+    width: inherit;
+    min-height: 60px;
+    margin-bottom: 23px;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #231f20;
+  }
+  &__btn {
+    max-width: 126px;
+    width: 100%;
+    border-radius: 8px;
+    background: #f7d22d;
+    padding: 11px 23px;
+    &:hover{
+        background-color: #313131;
+        color: #f7d22d;
+    }
+  }
+ 
+}
