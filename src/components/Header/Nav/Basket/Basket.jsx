@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './Basket.module.scss'
+import styles from './basket.module.scss'
 const Basket = () => {
   const [openBasket,setBasketOpen] = useState(0)
  

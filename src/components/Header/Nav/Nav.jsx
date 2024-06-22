@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Nav.module.scss";
+import styles from "./nav.module.scss";
 import Auth from "../../Auth/Auth";
 import Basket from "./Basket/Basket";
 

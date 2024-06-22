@@ -1,7 +1,7 @@
 import logo from "../../assets/img/logo.png";
 import Callback from "../UI/callback/Callback";
 import Container from "../container/Container";
-import styles from "./Header.module.scss";
+import styles from "./header.module.scss";
 import { Nav } from "./Nav/Nav";
 import Auth from "../Auth/Auth";
 const Header = () => {
