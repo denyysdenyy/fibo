@@ -51,6 +51,9 @@
         background-color: #313131;
         color: #f7d22d;
     }
+    &.active{
+      background-color: red;
+    }
   }
  
 }
