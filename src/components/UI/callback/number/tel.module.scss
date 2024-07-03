@@ -1,0 +1,11 @@
+.tel{
+    cursor: pointer;
+    color: #F7D22D;
+    text-transform: uppercase;
+    font-size: 1.625em;
+    transition: all 0.35s ease-in-out;
+
+    &:hover{
+        color: #231F20;
+    }
+}

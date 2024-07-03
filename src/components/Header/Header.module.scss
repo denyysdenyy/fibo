@@ -18,6 +18,10 @@
     font-size: 1.063em;
     span{
         color: #F7D22D;
+        cursor: pointer;
+        &:hover{
+          color: #FF2E65;
+        }
     }
   }
   &__plus{

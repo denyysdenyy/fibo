@@ -1,0 +1,21 @@
+.location {
+  border: 1px solid black;
+  width: 250px;
+  position: absolute;
+  z-index: 55;
+  background-color: #fff;
+  border: 3.5px solid rgba(247, 210, 45, 0.4);
+  border-radius: 10px;
+  padding: 10px;
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    li {
+      cursor: pointer;
+      &:hover{
+        color: #FF2E65;
+      }
+    }
+  }
+}
