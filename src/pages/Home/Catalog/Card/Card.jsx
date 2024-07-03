@@ -4,8 +4,11 @@ import pizza from '../../../../assets/img/pizza/5cheese.png'
 
 const Card = ({ cards }) => {
 
-
+  const [basketAdd,setBasketAdd] = useState(false)
  
+    const addCardtoBasket = (e)=>{
+      setBasketAdd(!basketAdd)
+    }
 
   return (
     <>
@@ -17,7 +20,7 @@ const Card = ({ cards }) => {
           <p className={styles.card__subtitle}>{card.subtitle}</p>
           <div className={styles.card__bottom}>
             <p className={styles.card__price}>{card.price}₴</p>
-            <button  className={styles.card__btn}>У корзину</button>
+            <button onClick={addCardtoBasket} className={styles.card__btn}>У корзину</button>
           </div>
         </div>
       ))}

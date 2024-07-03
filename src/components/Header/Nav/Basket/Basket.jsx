@@ -9,12 +9,12 @@ const Basket = () => {
 
   const [basketActive, setBasketActive] = useState(false);
   const [countCheck, setCountCheck] = useState(0);
-  const [totalItems,setTotalItems] = useState(0)
+  const [totalItems, setTotalItems] = useState(0);
 
-  const calcItems = ()=>{
-    const total = items.length
-    setTotalItems(total)
-  }
+  const calcItems = () => {
+    const total = items.length;
+    setTotalItems(total);
+  };
 
   const toogleActive = () => {
     setBasketActive(!basketActive);
@@ -40,11 +40,17 @@ const Basket = () => {
           basketActive ? styles.active : ""
         }`}
       >
-        <BasketItem items={items} />
-        <div className={styles.basket__receipt}>
-          <p className={styles.basket__receipt__title}>Сума заказу</p>
-          <p className={styles.basket__receipt__amount}>{countCheck}₴</p>
-        </div>
+        {items.length == 0 ? (
+          <div>Кошик пустий</div>
+        ) : (
+          <>
+            <BasketItem items={items} />
+            <div className={styles.basket__receipt}>
+         <p className={styles.basket__receipt__title}>Сума заказу</p>
+         <p className={styles.basket__receipt__amount}>{countCheck}₴</p>
+       </div> 
+          </>
+        )}
       </div>
     </div>
   );
